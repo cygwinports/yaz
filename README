@@ -10,25 +10,26 @@ new clients using YAZ, and it reduces your dependency on any single
 toolkit.
 
 Runtime requirements:
-  cygwin-1.5.18-1
+  cygwin-1.5.21-2
   libiconv2-1.9.2-2
-  libreadline6-5.0-4
-  libxml2-2.6.22-1
-  openssl-0.9.8a-1
+  libreadline6-5.1-5
+  libxml2-2.6.26-1
+  openssl-0.9.8b-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.18-1
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  bison-20030307-1
-  flex-2.5.4a-4
+  binutils-20060709-1
+  bison-2.3-1
+  cygport-0.2.5-1
+  flex-2.5.33-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-1
-  make-3.80-1
-  sed-4.1.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  sed-4.1.5-1
 
 Canonical website:
   http://www.indexdata.dk/yaz/
@@ -43,31 +44,33 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./yaz-2.1.10-X.sh all
+  cygport ./yaz-2.1.10-X.cygport all
 
 This will create:
-  /usr/src/libyaz2-2.1.10-X.tar.bz2
   /usr/src/yaz-2.1.10-X-src.tar.bz2
   /usr/src/yaz-2.1.10-X.tar.bz2
-  /usr/src/yaz-devel-2.1.10-X.tar.bz2
-  /usr/src/yaz-doc-2.1.10-X.tar.bz2
+  /usr/src/libyaz-devel-2.1.10-X.tar.bz2
+  /usr/src/libyaz2-2.1.10-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
+(yaz)
   /usr/bin/yaz-asncomp
   /usr/bin/yaz-client.exe
   /usr/bin/yaz-iconv.exe
   /usr/bin/yaz-marcdump.exe
   /usr/bin/yaz-ztest.exe
-  /usr/bin/zoom-benchmark.exe
   /usr/bin/zoomsh.exe
-  /usr/share/doc/Cygwin/yaz-2.1.10.README
-  /usr/share/doc/yaz-2.1.10/LICENSE
-  /usr/share/doc/yaz-2.1.10/NEWS
-  /usr/share/doc/yaz-2.1.10/README
-  /usr/share/doc/yaz-2.1.10/TODO
+  /usr/share/doc/Cygwin/yaz-2.1.34.README
+  /usr/share/doc/yaz-2.1.34/ChangeLog
+  /usr/share/doc/yaz-2.1.34/LICENSE
+  /usr/share/doc/yaz-2.1.34/NEWS
+  /usr/share/doc/yaz-2.1.34/README
+  /usr/share/doc/yaz-2.1.34/TODO
+  /usr/share/doc/yaz/common/id.png
+  /usr/share/doc/yaz/common/style1.css
   /usr/share/man/man1/yaz-asncomp.1.gz
   /usr/share/man/man1/yaz-client.1.gz
   /usr/share/man/man1/yaz-iconv.1.gz
@@ -75,14 +78,14 @@ Files included in the main package:
   /usr/share/man/man1/zoomsh.1.gz
   /usr/share/man/man7/yaz-log.7.gz
   /usr/share/man/man7/yaz.7.gz
-  /usr/share/man/man8/yaz-config.8.gz
   /usr/share/man/man8/yaz-ztest.8.gz
-  /usr/share/yaz/etc/maps.xml
   /usr/share/yaz/etc/MARC21slim2DC.xsl
   /usr/share/yaz/etc/MARC21slim2MODS.xsl
   /usr/share/yaz/etc/MARC21slim2RDFDC.xsl
   /usr/share/yaz/etc/MARC21slimUtils.xsl
+  /usr/share/yaz/etc/maps.xml
   /usr/share/yaz/etc/pqf.properties
+  /usr/share/yaz/etc/yazgfs.xml
   /usr/share/yaz/ill/ill.tcl
   /usr/share/yaz/ill/ill9702.asn
   /usr/share/yaz/ill/item-req.asn
@@ -96,13 +99,11 @@ Files included in the main package:
   /usr/share/yaz/z39.50/z.tcl
   /usr/share/yaz/z39.50/z3950v3.asn
 
-Files included in the libyaz2 package:
-
+(libyaz2)
   /usr/bin/cygyaz-2.dll
   /usr/bin/cygyazthread-2.dll
 
-Files included in the devel package:
-
+(libyaz-devel)
   /usr/bin/yaz-config
   /usr/include/yaz/backend.h
   /usr/include/yaz/ccl.h
@@ -114,9 +115,12 @@ Files included in the devel package:
   /usr/include/yaz/ill-core.h
   /usr/include/yaz/ill.h
   /usr/include/yaz/item-req.h
+  /usr/include/yaz/libxml2_error.h
   /usr/include/yaz/log.h
   /usr/include/yaz/logrpn.h
   /usr/include/yaz/marcdisp.h
+  /usr/include/yaz/nfa.h
+  /usr/include/yaz/nfaxml.h
   /usr/include/yaz/nmem.h
   /usr/include/yaz/odr.h
   /usr/include/yaz/oid.h
@@ -125,16 +129,21 @@ Files included in the devel package:
   /usr/include/yaz/pquery.h
   /usr/include/yaz/proto.h
   /usr/include/yaz/prt-ext.h
+  /usr/include/yaz/querytowrbuf.h
   /usr/include/yaz/readconf.h
+  /usr/include/yaz/record_conv.h
+  /usr/include/yaz/retrieval.h
   /usr/include/yaz/soap.h
   /usr/include/yaz/sortspec.h
   /usr/include/yaz/srw.h
   /usr/include/yaz/statserv.h
   /usr/include/yaz/tcpip.h
+  /usr/include/yaz/test.h
   /usr/include/yaz/tpath.h
   /usr/include/yaz/unix.h
   /usr/include/yaz/wrbuf.h
   /usr/include/yaz/xmalloc.h
+  /usr/include/yaz/xmlquery.h
   /usr/include/yaz/yaz-ccl.h
   /usr/include/yaz/yaz-iconv.h
   /usr/include/yaz/yaz-util.h
@@ -178,74 +187,72 @@ Files included in the devel package:
   /usr/lib/libyazthread.dll.a
   /usr/lib/libyazthread.la
   /usr/share/aclocal/yaz.m4
-
-Files included in the doc package:
-
-  /usr/share/doc/yaz-2.1.10/html/apilayer.png
-  /usr/share/doc/yaz-2.1.10/html/asn.external.html
-  /usr/share/doc/yaz-2.1.10/html/asn.html
-  /usr/share/doc/yaz-2.1.10/html/asn.oid.html
-  /usr/share/doc/yaz-2.1.10/html/asn.pdu.html
-  /usr/share/doc/yaz-2.1.10/html/asn.preparing.html
-  /usr/share/doc/yaz-2.1.10/html/client.commands.html
-  /usr/share/doc/yaz-2.1.10/html/client.html
-  /usr/share/doc/yaz-2.1.10/html/client.invoking.html
-  /usr/share/doc/yaz-2.1.10/html/client.searching.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.addresses.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.client.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.common.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.diagnostics.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.introduction.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.server.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.ssl.html
-  /usr/share/doc/yaz-2.1.10/html/comstack.summary.html
-  /usr/share/doc/yaz-2.1.10/html/credits.html
-  /usr/share/doc/yaz-2.1.10/html/future.html
-  /usr/share/doc/yaz-2.1.10/html/id.png
-  /usr/share/doc/yaz-2.1.10/html/indexdata.html
-  /usr/share/doc/yaz-2.1.10/html/installation.html
-  /usr/share/doc/yaz-2.1.10/html/installation.unix.html
-  /usr/share/doc/yaz-2.1.10/html/installation.win32.html
-  /usr/share/doc/yaz-2.1.10/html/introduction.api.html
-  /usr/share/doc/yaz-2.1.10/html/introduction.html
-  /usr/share/doc/yaz-2.1.10/html/license.html
-  /usr/share/doc/yaz-2.1.10/html/license.other.html
-  /usr/share/doc/yaz-2.1.10/html/odr.debugging.html
-  /usr/share/doc/yaz-2.1.10/html/odr.html
-  /usr/share/doc/yaz-2.1.10/html/odr.programming.html
-  /usr/share/doc/yaz-2.1.10/html/odr.use.html
-  /usr/share/doc/yaz-2.1.10/html/server.backend.html
-  /usr/share/doc/yaz-2.1.10/html/server.backendfunctions.html
-  /usr/share/doc/yaz-2.1.10/html/server.frontend.html
-  /usr/share/doc/yaz-2.1.10/html/server.html
-  /usr/share/doc/yaz-2.1.10/html/server.invocation.html
-  /usr/share/doc/yaz-2.1.10/html/server.main.html
-  /usr/share/doc/yaz-2.1.10/html/server.vhosts.html
-  /usr/share/doc/yaz-2.1.10/html/soap.html
-  /usr/share/doc/yaz-2.1.10/html/soap.http.html
-  /usr/share/doc/yaz-2.1.10/html/soap.srw.html
-  /usr/share/doc/yaz-2.1.10/html/soap.xml.html
-  /usr/share/doc/yaz-2.1.10/html/tools.html
-  /usr/share/doc/yaz-2.1.10/html/tools.log.html
-  /usr/share/doc/yaz-2.1.10/html/tools.marc.html
-  /usr/share/doc/yaz-2.1.10/html/tools.nmem.html
-  /usr/share/doc/yaz-2.1.10/html/tools.oid.html
-  /usr/share/doc/yaz-2.1.10/html/yaz.css
-  /usr/share/doc/yaz-2.1.10/html/yaz.html
-  /usr/share/doc/yaz-2.1.10/html/yaz.pdf
-  /usr/share/doc/yaz-2.1.10/html/zoom.events.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.ext.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.options.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.query.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.records.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.resultsets.html
-  /usr/share/doc/yaz-2.1.10/html/zoom.scan.html
+  /usr/share/doc/yaz-2.1.34/html/apilayer.png
+  /usr/share/doc/yaz-2.1.34/html/asn.external.html
+  /usr/share/doc/yaz-2.1.34/html/asn.html
+  /usr/share/doc/yaz-2.1.34/html/asn.oid.html
+  /usr/share/doc/yaz-2.1.34/html/asn.pdu.html
+  /usr/share/doc/yaz-2.1.34/html/asn.preparing.html
+  /usr/share/doc/yaz-2.1.34/html/client.commands.html
+  /usr/share/doc/yaz-2.1.34/html/client.html
+  /usr/share/doc/yaz-2.1.34/html/client.invoking.html
+  /usr/share/doc/yaz-2.1.34/html/client.searching.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.addresses.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.client.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.common.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.diagnostics.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.introduction.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.server.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.ssl.html
+  /usr/share/doc/yaz-2.1.34/html/comstack.summary.html
+  /usr/share/doc/yaz-2.1.34/html/credits.html
+  /usr/share/doc/yaz-2.1.34/html/future.html
+  /usr/share/doc/yaz-2.1.34/html/index.html
+  /usr/share/doc/yaz-2.1.34/html/indexdata.html
+  /usr/share/doc/yaz-2.1.34/html/installation.html
+  /usr/share/doc/yaz-2.1.34/html/installation.unix.html
+  /usr/share/doc/yaz-2.1.34/html/installation.win32.html
+  /usr/share/doc/yaz-2.1.34/html/introduction.api.html
+  /usr/share/doc/yaz-2.1.34/html/introduction.html
+  /usr/share/doc/yaz-2.1.34/html/license.html
+  /usr/share/doc/yaz-2.1.34/html/license.other.html
+  /usr/share/doc/yaz-2.1.34/html/odr.debugging.html
+  /usr/share/doc/yaz-2.1.34/html/odr.html
+  /usr/share/doc/yaz-2.1.34/html/odr.programming.html
+  /usr/share/doc/yaz-2.1.34/html/odr.use.html
+  /usr/share/doc/yaz-2.1.34/html/server.backend.html
+  /usr/share/doc/yaz-2.1.34/html/server.backendfunctions.html
+  /usr/share/doc/yaz-2.1.34/html/server.frontend.html
+  /usr/share/doc/yaz-2.1.34/html/server.html
+  /usr/share/doc/yaz-2.1.34/html/server.invocation.html
+  /usr/share/doc/yaz-2.1.34/html/server.main.html
+  /usr/share/doc/yaz-2.1.34/html/server.vhosts.html
+  /usr/share/doc/yaz-2.1.34/html/soap.html
+  /usr/share/doc/yaz-2.1.34/html/soap.http.html
+  /usr/share/doc/yaz-2.1.34/html/soap.srw.html
+  /usr/share/doc/yaz-2.1.34/html/soap.xml.html
+  /usr/share/doc/yaz-2.1.34/html/tools.html
+  /usr/share/doc/yaz-2.1.34/html/tools.log.html
+  /usr/share/doc/yaz-2.1.34/html/tools.marc.html
+  /usr/share/doc/yaz-2.1.34/html/tools.nmem.html
+  /usr/share/doc/yaz-2.1.34/html/tools.oid.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.events.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.ext.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.options.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.query.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.records.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.resultsets.html
+  /usr/share/doc/yaz-2.1.34/html/zoom.scan.html
+  /usr/share/man/man8/yaz-config.8.gz
 
 ------------------
 
 Port Notes:
+
+----- version 2.1.34-1 -----
+Version bump.
 
 ----- version 2.1.10-1 -----
 Initial release for Cygwin.

@@ -19,9 +19,9 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.21-2
-  autoconf2.5-2.59-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20060709-1
+  binutils-20060817-1
   bison-2.3-1
   cygport-0.2.5-1
   flex-2.5.33-1
@@ -40,17 +40,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yaz-2.1.10-X-src.tar.bz2
+  unpack yaz-2.1.36-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yaz-2.1.10-X.cygport all
+  cygport ./yaz-2.1.36-X.cygport all
 
 This will create:
-  /usr/src/yaz-2.1.10-X-src.tar.bz2
-  /usr/src/yaz-2.1.10-X.tar.bz2
-  /usr/src/libyaz-devel-2.1.10-X.tar.bz2
-  /usr/src/libyaz2-2.1.10-X.tar.bz2
+  /usr/src/libyaz-devel-2.1.36-X.tar.bz2
+  /usr/src/libyaz2-2.1.36-X.tar.bz2
+  /usr/src/yaz-2.1.36-X-src.tar.bz2
+  /usr/src/yaz-2.1.36-X.tar.bz2
+  /usr/src/yaz-doc-2.1.36-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,12 +64,12 @@ Files included in the binary packages:
   /usr/bin/yaz-marcdump.exe
   /usr/bin/yaz-ztest.exe
   /usr/bin/zoomsh.exe
-  /usr/share/doc/Cygwin/yaz-2.1.34.README
-  /usr/share/doc/yaz-2.1.34/ChangeLog
-  /usr/share/doc/yaz-2.1.34/LICENSE
-  /usr/share/doc/yaz-2.1.34/NEWS
-  /usr/share/doc/yaz-2.1.34/README
-  /usr/share/doc/yaz-2.1.34/TODO
+  /usr/share/doc/Cygwin/yaz-2.1.36.README
+  /usr/share/doc/yaz-2.1.36/ChangeLog
+  /usr/share/doc/yaz-2.1.36/LICENSE
+  /usr/share/doc/yaz-2.1.36/NEWS
+  /usr/share/doc/yaz-2.1.36/README
+  /usr/share/doc/yaz-2.1.36/TODO
   /usr/share/doc/yaz/common/id.png
   /usr/share/doc/yaz/common/style1.css
   /usr/share/man/man1/yaz-asncomp.1.gz
@@ -187,69 +188,74 @@ Files included in the binary packages:
   /usr/lib/libyazthread.dll.a
   /usr/lib/libyazthread.la
   /usr/share/aclocal/yaz.m4
-  /usr/share/doc/yaz-2.1.34/html/apilayer.png
-  /usr/share/doc/yaz-2.1.34/html/asn.external.html
-  /usr/share/doc/yaz-2.1.34/html/asn.html
-  /usr/share/doc/yaz-2.1.34/html/asn.oid.html
-  /usr/share/doc/yaz-2.1.34/html/asn.pdu.html
-  /usr/share/doc/yaz-2.1.34/html/asn.preparing.html
-  /usr/share/doc/yaz-2.1.34/html/client.commands.html
-  /usr/share/doc/yaz-2.1.34/html/client.html
-  /usr/share/doc/yaz-2.1.34/html/client.invoking.html
-  /usr/share/doc/yaz-2.1.34/html/client.searching.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.addresses.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.client.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.common.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.diagnostics.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.introduction.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.server.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.ssl.html
-  /usr/share/doc/yaz-2.1.34/html/comstack.summary.html
-  /usr/share/doc/yaz-2.1.34/html/credits.html
-  /usr/share/doc/yaz-2.1.34/html/future.html
-  /usr/share/doc/yaz-2.1.34/html/index.html
-  /usr/share/doc/yaz-2.1.34/html/indexdata.html
-  /usr/share/doc/yaz-2.1.34/html/installation.html
-  /usr/share/doc/yaz-2.1.34/html/installation.unix.html
-  /usr/share/doc/yaz-2.1.34/html/installation.win32.html
-  /usr/share/doc/yaz-2.1.34/html/introduction.api.html
-  /usr/share/doc/yaz-2.1.34/html/introduction.html
-  /usr/share/doc/yaz-2.1.34/html/license.html
-  /usr/share/doc/yaz-2.1.34/html/license.other.html
-  /usr/share/doc/yaz-2.1.34/html/odr.debugging.html
-  /usr/share/doc/yaz-2.1.34/html/odr.html
-  /usr/share/doc/yaz-2.1.34/html/odr.programming.html
-  /usr/share/doc/yaz-2.1.34/html/odr.use.html
-  /usr/share/doc/yaz-2.1.34/html/server.backend.html
-  /usr/share/doc/yaz-2.1.34/html/server.backendfunctions.html
-  /usr/share/doc/yaz-2.1.34/html/server.frontend.html
-  /usr/share/doc/yaz-2.1.34/html/server.html
-  /usr/share/doc/yaz-2.1.34/html/server.invocation.html
-  /usr/share/doc/yaz-2.1.34/html/server.main.html
-  /usr/share/doc/yaz-2.1.34/html/server.vhosts.html
-  /usr/share/doc/yaz-2.1.34/html/soap.html
-  /usr/share/doc/yaz-2.1.34/html/soap.http.html
-  /usr/share/doc/yaz-2.1.34/html/soap.srw.html
-  /usr/share/doc/yaz-2.1.34/html/soap.xml.html
-  /usr/share/doc/yaz-2.1.34/html/tools.html
-  /usr/share/doc/yaz-2.1.34/html/tools.log.html
-  /usr/share/doc/yaz-2.1.34/html/tools.marc.html
-  /usr/share/doc/yaz-2.1.34/html/tools.nmem.html
-  /usr/share/doc/yaz-2.1.34/html/tools.oid.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.events.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.ext.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.options.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.query.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.records.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.resultsets.html
-  /usr/share/doc/yaz-2.1.34/html/zoom.scan.html
   /usr/share/man/man8/yaz-config.8.gz
+
+(yaz-doc)
+  /usr/share/doc/yaz-2.1.36/html/apilayer.png
+  /usr/share/doc/yaz-2.1.36/html/asn.external.html
+  /usr/share/doc/yaz-2.1.36/html/asn.html
+  /usr/share/doc/yaz-2.1.36/html/asn.oid.html
+  /usr/share/doc/yaz-2.1.36/html/asn.pdu.html
+  /usr/share/doc/yaz-2.1.36/html/asn.preparing.html
+  /usr/share/doc/yaz-2.1.36/html/client.commands.html
+  /usr/share/doc/yaz-2.1.36/html/client.html
+  /usr/share/doc/yaz-2.1.36/html/client.invoking.html
+  /usr/share/doc/yaz-2.1.36/html/client.searching.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.addresses.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.client.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.common.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.diagnostics.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.introduction.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.server.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.ssl.html
+  /usr/share/doc/yaz-2.1.36/html/comstack.summary.html
+  /usr/share/doc/yaz-2.1.36/html/credits.html
+  /usr/share/doc/yaz-2.1.36/html/future.html
+  /usr/share/doc/yaz-2.1.36/html/index.html
+  /usr/share/doc/yaz-2.1.36/html/indexdata.html
+  /usr/share/doc/yaz-2.1.36/html/installation.html
+  /usr/share/doc/yaz-2.1.36/html/installation.unix.html
+  /usr/share/doc/yaz-2.1.36/html/installation.win32.html
+  /usr/share/doc/yaz-2.1.36/html/introduction.api.html
+  /usr/share/doc/yaz-2.1.36/html/introduction.html
+  /usr/share/doc/yaz-2.1.36/html/license.html
+  /usr/share/doc/yaz-2.1.36/html/license.other.html
+  /usr/share/doc/yaz-2.1.36/html/odr.debugging.html
+  /usr/share/doc/yaz-2.1.36/html/odr.html
+  /usr/share/doc/yaz-2.1.36/html/odr.programming.html
+  /usr/share/doc/yaz-2.1.36/html/odr.use.html
+  /usr/share/doc/yaz-2.1.36/html/server.backend.html
+  /usr/share/doc/yaz-2.1.36/html/server.backendfunctions.html
+  /usr/share/doc/yaz-2.1.36/html/server.frontend.html
+  /usr/share/doc/yaz-2.1.36/html/server.html
+  /usr/share/doc/yaz-2.1.36/html/server.invocation.html
+  /usr/share/doc/yaz-2.1.36/html/server.main.html
+  /usr/share/doc/yaz-2.1.36/html/server.vhosts.html
+  /usr/share/doc/yaz-2.1.36/html/soap.html
+  /usr/share/doc/yaz-2.1.36/html/soap.http.html
+  /usr/share/doc/yaz-2.1.36/html/soap.srw.html
+  /usr/share/doc/yaz-2.1.36/html/soap.xml.html
+  /usr/share/doc/yaz-2.1.36/html/tools.html
+  /usr/share/doc/yaz-2.1.36/html/tools.log.html
+  /usr/share/doc/yaz-2.1.36/html/tools.marc.html
+  /usr/share/doc/yaz-2.1.36/html/tools.nmem.html
+  /usr/share/doc/yaz-2.1.36/html/tools.oid.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.events.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.ext.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.options.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.query.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.records.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.resultsets.html
+  /usr/share/doc/yaz-2.1.36/html/zoom.scan.html
 
 ------------------
 
 Port Notes:
+
+----- version 2.1.36-1 -----
+Version bump.
 
 ----- version 2.1.34-1 -----
 Version bump.

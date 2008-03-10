@@ -10,24 +10,23 @@ new clients using YAZ, and it reduces your dependency on any single
 toolkit.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   libiconv2-1.11-1
-  libicu38-3.8-1
+  libicu38-3.8-2
   libreadline6-5.2.7-9
   libxml2-2.6.30-1
   libxslt-1.1.22-1
-  openssl-0.9.8e-3
+  openssl-0.9.8g-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
   bison-2.3-1
-  cygport-0.2.11-1
-  flex-2.5.33-3
-  gawk-3.1.5-4
+  cygport-0.3.8-1
+  flex-2.5.34-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.81-1
@@ -43,17 +42,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yaz-3.0.16-X-src.tar.bz2
+  unpack yaz-3.0.26-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yaz-3.0.16-X.cygport all
+  cygport ./yaz-3.0.26-X.cygport all
 
 This will create:
-  /usr/src/libyaz-devel-3.0.16-X.tar.bz2
-  /usr/src/libyaz3-3.0.16-X.tar.bz2
-  /usr/src/yaz-3.0.16-X-src.tar.bz2
-  /usr/src/yaz-3.0.16-X.tar.bz2
+  /usr/src/libyaz-devel-3.0.26-X.tar.bz2
+  /usr/src/libyaz3-3.0.26-X.tar.bz2
+  /usr/src/yaz-3.0.26-X-src.tar.bz2
+  /usr/src/yaz-3.0.26-X.tar.bz2
 
 -------------------------------------------
 
@@ -68,75 +67,75 @@ Files included in the binary packages:
   /usr/bin/yaz-marcdump.exe
   /usr/bin/yaz-ztest.exe
   /usr/bin/zoomsh.exe
-  /usr/share/doc/Cygwin/yaz-3.0.16.README
-  /usr/share/doc/yaz-3.0.16/ChangeLog
-  /usr/share/doc/yaz-3.0.16/LICENSE
-  /usr/share/doc/yaz-3.0.16/NEWS
-  /usr/share/doc/yaz-3.0.16/README
-  /usr/share/doc/yaz-3.0.16/TODO
-  /usr/share/doc/yaz-3.0.16/html/apilayer.png
-  /usr/share/doc/yaz-3.0.16/html/asn.external.html
-  /usr/share/doc/yaz-3.0.16/html/asn.html
-  /usr/share/doc/yaz-3.0.16/html/asn.pdu.html
-  /usr/share/doc/yaz-3.0.16/html/asn.preparing.html
-  /usr/share/doc/yaz-3.0.16/html/client.commands.html
-  /usr/share/doc/yaz-3.0.16/html/client.html
-  /usr/share/doc/yaz-3.0.16/html/client.invoking.html
-  /usr/share/doc/yaz-3.0.16/html/client.searching.html
-  /usr/share/doc/yaz-3.0.16/html/common/id.png
-  /usr/share/doc/yaz-3.0.16/html/common/style1.css
-  /usr/share/doc/yaz-3.0.16/html/comstack.addresses.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.client.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.common.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.diagnostics.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.introduction.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.server.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.ssl.html
-  /usr/share/doc/yaz-3.0.16/html/comstack.summary.html
-  /usr/share/doc/yaz-3.0.16/html/credits.html
-  /usr/share/doc/yaz-3.0.16/html/future.html
-  /usr/share/doc/yaz-3.0.16/html/index.html
-  /usr/share/doc/yaz-3.0.16/html/indexdata.html
-  /usr/share/doc/yaz-3.0.16/html/installation.html
-  /usr/share/doc/yaz-3.0.16/html/installation.unix.html
-  /usr/share/doc/yaz-3.0.16/html/installation.win32.html
-  /usr/share/doc/yaz-3.0.16/html/introduction.api.html
-  /usr/share/doc/yaz-3.0.16/html/introduction.html
-  /usr/share/doc/yaz-3.0.16/html/license.html
-  /usr/share/doc/yaz-3.0.16/html/license.other.html
-  /usr/share/doc/yaz-3.0.16/html/list-oids.html
-  /usr/share/doc/yaz-3.0.16/html/marc.html
-  /usr/share/doc/yaz-3.0.16/html/odr.debugging.html
-  /usr/share/doc/yaz-3.0.16/html/odr.html
-  /usr/share/doc/yaz-3.0.16/html/odr.programming.html
-  /usr/share/doc/yaz-3.0.16/html/odr.use.html
-  /usr/share/doc/yaz-3.0.16/html/server.backend.html
-  /usr/share/doc/yaz-3.0.16/html/server.backendfunctions.html
-  /usr/share/doc/yaz-3.0.16/html/server.frontend.html
-  /usr/share/doc/yaz-3.0.16/html/server.html
-  /usr/share/doc/yaz-3.0.16/html/server.invocation.html
-  /usr/share/doc/yaz-3.0.16/html/server.main.html
-  /usr/share/doc/yaz-3.0.16/html/server.vhosts.html
-  /usr/share/doc/yaz-3.0.16/html/soap.html
-  /usr/share/doc/yaz-3.0.16/html/soap.http.html
-  /usr/share/doc/yaz-3.0.16/html/soap.srw.html
-  /usr/share/doc/yaz-3.0.16/html/soap.xml.html
-  /usr/share/doc/yaz-3.0.16/html/tools.html
-  /usr/share/doc/yaz-3.0.16/html/tools.log.html
-  /usr/share/doc/yaz-3.0.16/html/tools.nmem.html
-  /usr/share/doc/yaz-3.0.16/html/tools.oid.html
-  /usr/share/doc/yaz-3.0.16/html/tools.retrieval.html
-  /usr/share/doc/yaz-3.0.16/html/ziffy.html
-  /usr/share/doc/yaz-3.0.16/html/ziffy.using.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.events.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.extendedservices.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.options.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.query.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.records.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.resultsets.html
-  /usr/share/doc/yaz-3.0.16/html/zoom.scan.html
+  /usr/share/doc/Cygwin/yaz-3.0.26.README
+  /usr/share/doc/yaz-3.0.26/ChangeLog
+  /usr/share/doc/yaz-3.0.26/LICENSE
+  /usr/share/doc/yaz-3.0.26/NEWS
+  /usr/share/doc/yaz-3.0.26/README
+  /usr/share/doc/yaz-3.0.26/TODO
+  /usr/share/doc/yaz-3.0.26/html/apilayer.png
+  /usr/share/doc/yaz-3.0.26/html/asn.external.html
+  /usr/share/doc/yaz-3.0.26/html/asn.html
+  /usr/share/doc/yaz-3.0.26/html/asn.pdu.html
+  /usr/share/doc/yaz-3.0.26/html/asn.preparing.html
+  /usr/share/doc/yaz-3.0.26/html/client.commands.html
+  /usr/share/doc/yaz-3.0.26/html/client.html
+  /usr/share/doc/yaz-3.0.26/html/client.invoking.html
+  /usr/share/doc/yaz-3.0.26/html/client.searching.html
+  /usr/share/doc/yaz-3.0.26/html/common/id.png
+  /usr/share/doc/yaz-3.0.26/html/common/style1.css
+  /usr/share/doc/yaz-3.0.26/html/comstack.addresses.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.client.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.common.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.diagnostics.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.introduction.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.server.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.ssl.html
+  /usr/share/doc/yaz-3.0.26/html/comstack.summary.html
+  /usr/share/doc/yaz-3.0.26/html/credits.html
+  /usr/share/doc/yaz-3.0.26/html/future.html
+  /usr/share/doc/yaz-3.0.26/html/index.html
+  /usr/share/doc/yaz-3.0.26/html/indexdata.html
+  /usr/share/doc/yaz-3.0.26/html/installation.html
+  /usr/share/doc/yaz-3.0.26/html/installation.unix.html
+  /usr/share/doc/yaz-3.0.26/html/installation.win32.html
+  /usr/share/doc/yaz-3.0.26/html/introduction.api.html
+  /usr/share/doc/yaz-3.0.26/html/introduction.html
+  /usr/share/doc/yaz-3.0.26/html/license.html
+  /usr/share/doc/yaz-3.0.26/html/license.other.html
+  /usr/share/doc/yaz-3.0.26/html/list-oids.html
+  /usr/share/doc/yaz-3.0.26/html/marc.html
+  /usr/share/doc/yaz-3.0.26/html/odr.debugging.html
+  /usr/share/doc/yaz-3.0.26/html/odr.html
+  /usr/share/doc/yaz-3.0.26/html/odr.programming.html
+  /usr/share/doc/yaz-3.0.26/html/odr.use.html
+  /usr/share/doc/yaz-3.0.26/html/server.backend.html
+  /usr/share/doc/yaz-3.0.26/html/server.backendfunctions.html
+  /usr/share/doc/yaz-3.0.26/html/server.frontend.html
+  /usr/share/doc/yaz-3.0.26/html/server.html
+  /usr/share/doc/yaz-3.0.26/html/server.invocation.html
+  /usr/share/doc/yaz-3.0.26/html/server.main.html
+  /usr/share/doc/yaz-3.0.26/html/server.vhosts.html
+  /usr/share/doc/yaz-3.0.26/html/soap.html
+  /usr/share/doc/yaz-3.0.26/html/soap.http.html
+  /usr/share/doc/yaz-3.0.26/html/soap.srw.html
+  /usr/share/doc/yaz-3.0.26/html/soap.xml.html
+  /usr/share/doc/yaz-3.0.26/html/tools.html
+  /usr/share/doc/yaz-3.0.26/html/tools.log.html
+  /usr/share/doc/yaz-3.0.26/html/tools.nmem.html
+  /usr/share/doc/yaz-3.0.26/html/tools.oid.html
+  /usr/share/doc/yaz-3.0.26/html/tools.retrieval.html
+  /usr/share/doc/yaz-3.0.26/html/ziffy.html
+  /usr/share/doc/yaz-3.0.26/html/ziffy.using.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.events.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.extendedservices.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.options.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.query.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.records.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.resultsets.html
+  /usr/share/doc/yaz-3.0.26/html/zoom.scan.html
   /usr/share/man/man1/yaz-asncomp.1.gz
   /usr/share/man/man1/yaz-client.1.gz
   /usr/share/man/man1/yaz-iconv.1.gz
@@ -282,6 +281,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 3.0.26-1 -----
+Version bump.
 
 ----- version 3.0.16-1 -----
 Version bump.  Added ICU support.

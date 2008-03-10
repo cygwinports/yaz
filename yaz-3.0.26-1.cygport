@@ -1,0 +1,20 @@
+DESCRIPTION="Z39.50 ZOOM protocol library"
+HOMEPAGE="http://www.indexdata.dk/yaz/"
+SRC_URI="http://ftp.indexdata.dk/pub/yaz/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}${PV_MAJ} lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]="--exclude=*-config --exclude=*-config.8* --exclude=*.dll
+                 --exclude=aclocal usr/bin/ usr/share/"
+PKG_CONTENTS[1]="usr/bin/cygyaz*-${PV_MAJ}.dll"
+PKG_CONTENTS[2]="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/aclocal/
+                 usr/share/man/man8/yaz-config*"
+
+CYGCONF_ARGS="
+	--enable-shared
+	--with-iconv=/usr
+	--with-openssl=/usr
+	--with-xml2=/usr"
+
+MAKEOPTS+=" docdir=/usr/share/doc/${P}/html
+            commondir=/usr/share/doc/${P}/html/common"

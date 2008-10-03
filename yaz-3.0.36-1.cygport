@@ -1,9 +1,9 @@
 DESCRIPTION="Z39.50 ZOOM protocol library"
 HOMEPAGE="http://www.indexdata.dk/yaz/"
 SRC_URI="http://ftp.indexdata.dk/pub/yaz/${P}.tar.gz"
+PATCH_URI="3.0.36-no-undefined.patch"
 
 PKG_NAMES="${PN} lib${PN}${PV_MAJ} lib${PN}-devel"
-PKG_HINTS="setup lib devel"
 PKG_CONTENTS[0]="--exclude=*-config --exclude=*-config.8* --exclude=*.dll
                  --exclude=aclocal usr/bin/ usr/share/"
 PKG_CONTENTS[1]="usr/bin/cygyaz*-${PV_MAJ}.dll"

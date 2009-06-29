@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin libyaz3 libiconv libicu-devel libxml2-devel libxslt-devel openssl-devel
+requires: libyaz3 libiconv libicu-devel libxml2-devel libxslt-devel openssl-devel
 external-source: yaz
 sdesc: "Z39.50 ZOOM protocol library (development)"
 ldesc: "YAZ is a programmers toolkit supporting the development of

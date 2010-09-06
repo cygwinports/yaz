@@ -1,5 +1,5 @@
 category: Net
-requires: libyaz3 libreadline6
+requires: libyaz4 libreadline7
 sdesc: "Z39.50 ZOOM protocol library (utilities)"
 ldesc: "YAZ is a programmers toolkit supporting the development of
 Z39.50/SRW/SRU clients and servers. Z39.50-2003 (version 3) as well as

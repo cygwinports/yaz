@@ -1,0 +1,17 @@
+DESCRIPTION="Z39.50 ZOOM protocol library"
+HOMEPAGE="http://www.indexdata.dk/yaz/"
+SRC_URI="http://ftp.indexdata.dk/pub/yaz/${P}.tar.gz"
+PATCH_URI="4.0.12-no-undefined.patch"
+
+PKG_NAMES="${PN} libyaz4 libyaz-devel"
+yaz_CONTENTS="--exclude=*-config --exclude=*-config.8* --exclude=*.dll
+                 --exclude=aclocal usr/bin/ usr/share/"
+libyaz4_CONTENTS="usr/bin/cygyaz*-4.dll"
+libyaz_devel_CONTENTS="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/aclocal/
+                 usr/share/man/man8/yaz-config*"
+
+CYGCONF_ARGS="
+	--enable-shared
+	--with-iconv=/usr
+	--with-openssl=/usr
+	--with-xml2=/usr"

@@ -1,6 +1,6 @@
---- origsrc/yaz-4.0.12/src/Makefile.am	2010-08-16 06:05:23.000000000 -0500
-+++ src/yaz-4.0.12/src/Makefile.am	2010-09-06 13:29:26.719489300 -0500
-@@ -105,16 +105,16 @@ libyaz_la_SOURCES=version.c options.c lo
+--- origsrc/yaz-4.2.7/src/Makefile.am	2011-07-20 03:55:44.000000000 -0500
++++ src/yaz-4.2.7/src/Makefile.am	2011-08-11 01:49:54.313942100 -0500
+@@ -109,12 +109,12 @@ libyaz_la_SOURCES=version.c options.c lo
    json.c xml_include.c file_glob.c dirent.c mutex-p.h mutex.c condvar.c \
    thread_id.c gettimeofday.c thread_create.c spipe.c
  
@@ -13,8 +13,12 @@
 -libyaz_server_la_LDFLAGS=-version-info $(YAZ_VERSION_INFO)
 +libyaz_server_la_LDFLAGS=-version-info $(YAZ_VERSION_INFO) -no-undefined
  
- libyaz_icu_la_SOURCES = icu_chain.c icu_utf16.c icu_utf8.c \
- 	icu_transform.c icu_casemap.c icu_tokenizer.c icu_sortkey.c
+ STEMMER_SOURCES = \
+ 	../libstemmer_c/include/libstemmer.h \
+@@ -132,7 +132,7 @@ STEMMER_SOURCES = \
+ libyaz_icu_la_SOURCES = icu_chain.c icu_utf16.c icu_utf8.c stemmer.c \
+ 	icu_transform.c icu_casemap.c icu_tokenizer.c icu_sortkey.c \
+ 	$(STEMMER_SOURCES)
 -libyaz_icu_la_LDFLAGS=-version-info $(YAZ_VERSION_INFO)
 +libyaz_icu_la_LDFLAGS=-version-info $(YAZ_VERSION_INFO) -no-undefined
  

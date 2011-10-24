@@ -12,6 +12,10 @@ libyaz_devel_CONTENTS="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/acloca
 
 CYGCONF_ARGS="
 	--enable-shared
+	--with-docbook-dtd=/usr/share/sgml/docbook/xml-dtd-4.5
+	--with-docbook-dsssl=/usr/share/sgml/docbook/dsssl-stylesheets
+	--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets
 	--with-iconv=/usr
 	--with-openssl=/usr
-	--with-xml2=/usr"
+	--with-xml2=/usr
+"

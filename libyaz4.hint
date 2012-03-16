@@ -1,5 +1,5 @@
 category: Net Libs
-requires: libiconv2 libicu48 libxml2 libxslt libopenssl098
+requires: libiconv2 libicu48 libxml2 libxslt libopenssl100
 external-source: yaz
 sdesc: "Z39.50 ZOOM protocol library (runtime library)"
 ldesc: "YAZ is a programmers toolkit supporting the development of

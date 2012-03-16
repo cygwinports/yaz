@@ -11,7 +11,7 @@ libyaz_devel_CONTENTS="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/acloca
                  usr/share/man/man1/yaz-config*"
 
 CYGCONF_ARGS="
-	--enable-shared
+	--enable-shared --disable-static
 	--with-docbook-dtd=/usr/share/sgml/docbook/xml-dtd-4.5
 	--with-docbook-dsssl=/usr/share/sgml/docbook/dsssl-stylesheets
 	--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets
@@ -19,3 +19,5 @@ CYGCONF_ARGS="
 	--with-openssl=/usr
 	--with-xml2=/usr
 "
+
+KEEP_LA_FILES="none"

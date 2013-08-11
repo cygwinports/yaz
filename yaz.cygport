@@ -1,12 +1,21 @@
-DESCRIPTION="Z39.50 ZOOM protocol library"
-HOMEPAGE="http://www.indexdata.dk/yaz/"
-SRC_URI="http://ftp.indexdata.dk/pub/yaz/${P}.tar.gz"
+NAME="yaz"
+VERSION=4.2.63
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="Z39.50 ZOOM protocol toolkit"
+DESCRIPTION="YAZ is a programmers toolkit supporting the development of
+Z39.50/SRW/SRU clients and servers. Z39.50-2003 (version 3) as well as
+SRW/SRU version 1.1 are supported in both the client and server roles."
+HOMEPAGE="http://www.indexdata.com/yaz/"
+SRC_URI="http://ftp.indexdata.com/pub/yaz/yaz-${VERSION}.tar.gz"
 PATCH_URI="4.2.7-no-undefined.patch"
 
-PKG_NAMES="${PN} libyaz4 libyaz-devel"
+PKG_NAMES="yaz libyaz4 libyaz-devel"
 yaz_CONTENTS="--exclude=*-config --exclude=*-config.1* --exclude=*.dll
                  --exclude=aclocal usr/bin/ usr/share/"
+libyaz4_CATEGORY="Libs"
 libyaz4_CONTENTS="usr/bin/cygyaz*-4.dll"
+libyaz_devel_CATEGORY="Libs"
 libyaz_devel_CONTENTS="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/aclocal/
                  usr/share/man/man1/yaz-config*"
 

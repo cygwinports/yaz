@@ -1,5 +1,5 @@
 NAME="yaz"
-VERSION=4.2.63
+VERSION=5.4.1
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Z39.50 ZOOM protocol toolkit"
@@ -10,17 +10,16 @@ HOMEPAGE="http://www.indexdata.com/yaz/"
 SRC_URI="http://ftp.indexdata.com/pub/yaz/yaz-${VERSION}.tar.gz"
 PATCH_URI="4.2.7-no-undefined.patch"
 
-PKG_NAMES="yaz libyaz4 libyaz-devel"
+PKG_NAMES="yaz libyaz5 libyaz-devel"
 yaz_CONTENTS="--exclude=*-config --exclude=*-config.1* --exclude=*.dll
                  --exclude=aclocal usr/bin/ usr/share/"
-libyaz4_CATEGORY="Libs"
-libyaz4_CONTENTS="usr/bin/cygyaz*-4.dll"
+libyaz5_CATEGORY="Libs"
+libyaz5_CONTENTS="usr/bin/cygyaz*-5.dll"
 libyaz_devel_CATEGORY="Libs"
 libyaz_devel_CONTENTS="usr/bin/yaz-config usr/include/ usr/lib/ usr/share/aclocal/
                  usr/share/man/man1/yaz-config*"
 
 CYGCONF_ARGS="
-	--enable-shared --disable-static
 	--with-docbook-dtd=/usr/share/sgml/docbook/xml-dtd-4.5
 	--with-docbook-dsssl=/usr/share/sgml/docbook/dsssl-stylesheets
 	--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets

@@ -1,5 +1,5 @@
 NAME="yaz"
-VERSION=5.10.2
+VERSION=5.12.1
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Z39.50 ZOOM protocol toolkit"

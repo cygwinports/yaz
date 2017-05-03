@@ -1,5 +1,5 @@
 NAME="yaz"
-VERSION=5.18.0
+VERSION=5.21.0
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Z39.50 ZOOM protocol toolkit"
@@ -23,8 +23,8 @@ CYGCONF_ARGS="
 	--with-docbook-dtd=/usr/share/sgml/docbook/xml-dtd-4.5
 	--with-docbook-dsssl=/usr/share/sgml/docbook/dsssl-stylesheets
 	--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets
+	--with-gnutls=/usr
 	--with-iconv=/usr
-	--with-openssl=/usr
 	--with-xml2=/usr
 "
 

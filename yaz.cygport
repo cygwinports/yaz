@@ -1,6 +1,6 @@
 NAME="yaz"
 VERSION=5.23.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Net"
 SUMMARY="Z39.50 ZOOM protocol toolkit"
 DESCRIPTION="YAZ is a programmers toolkit supporting the development of
